@@ -26,18 +26,14 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
-         */
+        // Checks if every feed has a url defined
         it('all feeds have url defined and not empty', function() {
             // Loop through each feed
             for(var i = 0; i < allFeeds.length; i++) {
                 // Every feed must have an url
                 expect(allFeeds[i].url).toBeDefined();
-                // and it should not equal 0 or undefined
-                expect(allFeeds[i].url).not.toBe(0);
+                // and it should not be empty
+                expect(allFeeds[i].url).not.toBe('');
             }
         });
 
@@ -46,34 +42,27 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+         // Checks if every feed has a name (title) defined
         it('all feeds have a name defined and not empty', function() {
             // Same as before, loop through each feed
             for (var i = 0; i < allFeeds.length; i++) {
                 // Check if they have a name defined
                 expect(allFeeds[i].name).toBeDefined();
-                // Should not equal 0 or undefined
-                expect(allFeeds[i].name).not.toBe(0);
+                // Should not be empty
+                expect(allFeeds[i].name).not.toBe('');
             };
         });
     });
 
-
-    /* TODO: Write a new test suite named "The menu" */
+    // Test suite for the menu navigation
     describe('The menu', function() {
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
-         */
+        // The sidebar menu navigation should be hidden by default
         it('menu is hidden by default', function() {
             // Checks if body has the .menu-hidden class
             expect($('body').hasClass('menu-hidden')).toEqual(true);
         });
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+
+        // Menu should fade in/out on click, this test checks for visibility
         it('menu should change visibility on click', function() {
             // Menu is hidden by default so
             $('.menu-icon-link').click();
@@ -103,7 +92,7 @@ $(function() {
 
         it('should contain at least a single .entry element in .feed container', function() {
             // Checks if number of entries is > 0
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
     /* TODO: Write a new test suite named "New Feed Selection" */
