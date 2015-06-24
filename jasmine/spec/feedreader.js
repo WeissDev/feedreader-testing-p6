@@ -113,7 +113,7 @@ $(function() {
                 loadFeed(1, done);
             });
         });
-
+        // The content of .feed should not be equal to oldContent
         it('should change content when new feed is loaded', function() {
             expect($('.feed').html()).not.toBe(oldContent);
         });
