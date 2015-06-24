@@ -32,8 +32,11 @@ $(function() {
          * and that the URL is not empty.
          */
         it('all feeds have url defined and not empty', function() {
+            // Loop through each feed
             for(var i = 0; i < allFeeds.length; i++) {
+                // Every feed must have an url
                 expect(allFeeds[i].url).toBeDefined();
+                // and it should not equal 0 or undefined
                 expect(allFeeds[i].url).not.toBe(0);
             }
         });
@@ -44,8 +47,11 @@ $(function() {
          * and that the name is not empty.
          */
         it('all feeds have a name defined and not empty', function() {
+            // Same as before, loop through each feed
             for (var i = 0; i < allFeeds.length; i++) {
+                // Check if they have a name defined
                 expect(allFeeds[i].name).toBeDefined();
+                // Should not equal 0 or undefined
                 expect(allFeeds[i].name).not.toBe(0);
             };
         });
