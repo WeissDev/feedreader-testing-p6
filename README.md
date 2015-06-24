@@ -4,6 +4,8 @@ I completed this as the final project for the Udacity Frontend-Developer Nanodeg
 
 If you open the application. You notice a section at the bottom which is named "Jasmine". In that section you can see all the test suites I wrote and see if they pass the test or not.
 
+The test suites can be found in jasmine/spec/feedreader.js
+
  You can have a look at it <a href="http://weissdev.github.io/feedreader-testing-p6/">here</a>.
 
 ### Resources used to complete this project
