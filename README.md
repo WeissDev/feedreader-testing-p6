@@ -6,7 +6,7 @@ If you open the application. You notice a section at the bottom which is named "
 
 The test suites can be found in jasmine/spec/feedreader.js
 
- You can have a look at it <a href="http://weissdev.github.io/feedreader-testing-p6/">here</a>.
+If you wish to have a look at the project do so by cloning or downloading the project files and open index.html. Alternatively simply click <a href="http://weissdev.github.io/feedreader-testing-p6/">here</a>.
 
 ### Resources used to complete this project
 
