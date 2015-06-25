@@ -79,9 +79,7 @@ $(function() {
          * It checks whether or not there is a least a single .entry element in the .feed container
          */
         beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done);
         });
 
         it('should contain at least a single .entry element in .feed container', function() {
